@@ -2,13 +2,16 @@
   <div class="homeWarp">
     <el-container class="main_container">
       <el-header>
-        <el-row>
-          <el-image :src="require('@/assets/logo_2.png')"></el-image>
+        <el-row :gutter="10">
+          <el-col :span="24">
+            <el-image :src="require('@/assets/logo_2.png')"></el-image>
+          </el-col>
         </el-row>
       </el-header>
-        <el-main>Main
-        </el-main>
-        <el-footer>Footer</el-footer>
+      <el-main>Main
+      </el-main>
+      <el-footer>Footer
+      </el-footer>
     </el-container>
   </div>
 </template>
@@ -21,10 +24,11 @@ export default {
 </script>
 
 <style scoped>
-.main_container .el-header .el-image{
+.main_container .el-header .el-image {
   height: 60px;
   right: 750px;
 }
+
 .homeWarp {
   position: absolute;
   top: 0;
